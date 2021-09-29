@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HowWeRoll prototype (lagring)</title>
+    <!-- Med denne filen ønsker vi å bevise at vi kan samle inn data ... -->
+    <style>
+      /* Her kan stil defineres (vi skal bruke Cascading Style Sheets) */
+      button {
+        color: rgb(0, 0, 0);
+        width: 100px;
+        height: 40px;
+        background-color:white;
+        border-width: 3px;
+        border-color:steelblue;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        margin: 5px;
+        height: min-content;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+
+      * {
+        font-family: Montserrat, sans-serif;
+      }
+
+      body {
+        background-color: white;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        min-height: 50vh;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .radio {
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+          margin-right: 30px;
+          font-size: 20px;
+          margin-bottom: 20px;
+          
+      }
+
+    .radioknapper {
+          margin-top: 10vh;
+      }
+
+      p {
+          margin-top: 20px;
+      }
+
+      .slider {
+          background: white;
+          width: 30vh; 
+          appearance: none;
+      }
+
+      .slider:focus {
+          outline: none;
+      }
+
+      .slider::-webkit-slider-thumb {
+          appearance: none;
+          border: rgb(82, 151, 255);
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          background:royalblue;
+          cursor: pointer;
+          margin-top: -3px;
+          
+      }
+
+      .slider::-webkit-slider-runnable-track {
+          width: 100%;
+          height: 9px;
+          cursor: pointer;
+          box-shadow: rgb(0, 0, 0);
+          background:skyblue;
+          border-radius: 5px;
+          border:slateblue
+      }
+
+      .slider:focus::-webkit-slider-runnable-track {
+        background: rgb(85, 162, 224);
+      }
+
+      
+          
+
+      a {
+          font-size: 20px;
+          color: rgb(59, 137, 255);
+          margin: 5px;
+          position: relative;
+      }
+
+      a:hover {
+          color: hotpink;
+          text-decoration: none;
+
+      }
+
+    </style>
+     <!-- Add hover effects to a href -->
+  </head>
+  <body>
+    <!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
+    <!-- Issue se https://html.spec.whatwg.org/multipage/forms.html#introduction-4 -->
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">See report</a>
+    </nav>
+
+    <h1>How we roll</h1>
+    <h2>Gruppe 11B</h2>
+    
+    <br>
+   
+    <form>
+      <p>
+        <label for="navn">Fornavn </label>
+        <input type="text" name="navn" id="navn" />
+      </p>
+
+      <p>
+        <label for="enavn">Etternavn</label>
+        <input type="text" name="enavn" id="enavn" />
+      </p>
+<br>
+
+      <h2>How We Roll - parametre:</h2>
+
+      <div>
+        <!-- dorn - day or night -->
+        <label for="dorn">Morgenfugl</label>
+        <input type="range" class="slider" id="dorn" name="dorn" value="50" />
+        <label for="dorn">Nattugle</label>
+      </div>
+<br>
+      <div>
+        <!-- cora - cooperate or alone -->
+        <label for="cora">Jobbe med det sammen</label>
+        <input type="range" class="slider" id="cora" name="cora" value="50" />
+        <label for="cora">Gå for seg selv og tenke</label>
+      </div>
+
+      <p>
+          <label for="bors"> Gi meg backstory</label>
+          <input type="range" class="slider" id="bors" name="bors" value="50" />
+          <label for="bors"> Gå rett på sak</label>
+          <p>
+
+          </p>
+          <label for="sorg"> Snakke om det </label>
+          <input type="range" class="slider" id="sorg" name="sorg" value="50" />
+          <label for="sorg"> Gå videre </label>
+          <p>
+
+          </p>
+          <!--"tidring" Tid eller ringe-->
+          <label for="tidring"> Sette av tid </label>
+          <input type="range" class="slider" id="tidring" name="tidring" value="50" />
+          <label for="tidring"> Ring meg når som helst </label>
+
+          <p>
+
+          </p>
+          <!--"zorm" - zoom or message-->
+          <label for="zorm"> Ringe på zoom </label>
+          <input type="range" class="slider" id="zorm" name="zorm" value="50" />
+          <label for="zorm"> Sende meldinger </label>
+          <p>
+
+          </p>
+          <!--"klorw" - Kl. or whenever-->
+          <label for="klorw"> Kl. 09-17 </label>
+          <input type="range" class="slider" id="klorw" name="klorw" value="50" />
+          <label for="klorw"> Har ikke en fast timeplan </label>
+          <p>
+
+          </p>
+          <!--"port" - prosess or tell me-->
+          <label for="port"> Jeg vil være med i prosessen </label>
+          <input type="range" class="slider" id="port" name="port" value="50" />
+          <label for="port"> Bare si hva jeg skal gjøre </label>
+          <p>
+
+          </p>
+          <!--"porp" - privat or public-->
+          <label for="porp"> Privat annerkjennelse </label>
+          <input type="range" class="slider" id="porp" name="porp" value="50" />
+          <label for="porp"> Offentlig annerkjennelse </label>
+<p>
+
+</p>
+          <!--"rore"- role or everything-->
+          <label for="rore"> Fast rolle i gruppen </label>
+          <input type="range" class="slider" id="rore" name="rore" value="50" />
+          <label for="rore"> Kan gjøre alt </label>
+          <p>
+
+          </p>
+          <!--"norl" - Now or later-->
+          <label for="norl"> Regelmessig tilbakemelding </label>
+          <input type="range" class="slider" id="norl" name="norl" value="50" />
+          <label for="norl"> Tilbakemelding etter prosjekter </label>
+      </p>
+
+      <br>
+      <br>
+
+      <button type="submit">Lagre</button>
+    </form>
+
+    <div class="results">
+      <h2>Form Data</h2>
+      <pre></pre>
+    </div>
+
+    <script>
+      // Example POST method implementation using fetch:
+      async function postData(url = "", data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          mode: "cors", // no-cors, *cors, same-origin
+          cache: "no-cache", // *default, no-cache, reload, force-cache,only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: "follow", // manual, *follow, error
+          referrerPolicy: "no-referrer", // no-referrer,*no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify(data), // body data type must match"Content-Type"header
+        });
+        return response.json(); // parses JSON response into native JavaScriptobjects
+      }
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        const formJSON = Object.fromEntries(data.entries());
+        const results = document.querySelector(".results pre");
+        postData("https://bacit.info/", formJSON).then((data) => {
+          results.innerText = JSON.stringify(data, null, 2);
+        });
+      }
+      const form = document.querySelector("form");
+      form.addEventListener("submit", handleSubmit);
+    </script>
+
+<br>
+
+  </body>
+</html>
