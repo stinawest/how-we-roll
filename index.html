@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <!-- <link type="text/css" rel="stylesheet" href="style.css" /> -->
+    <title>11B Visit Kort</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: white;
+            font-family: Montserrat, sans-serif;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+        }
+
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        h6 {
+            margin: 5px 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .card-container {
+            width: 250px;
+            height: 350px;
+        /'background-color: #231E39;
+        border-radius: 5px;
+            box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            max-width: 100%;
+            text-align: center;
+            transition: .2s;
+            color: black;
+        }
+
+        #david {
+            background: wheat;
+
+        }
+
+        #andreas {
+            background: orange;
+
+        }
+
+        #tore{
+            background: yellow;
+
+        }
+        #eivind{
+            background: mediumpurple;
+
+        }
+
+
+
+        #rasmus{
+            background: palegreen;
+
+        }
+        #stina{
+            background: lightpink;
+
+        }
+        .card-container .round {
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 7px;
+        }
+
+       /* main {
+            min-height: 1000vh;
+            width: 100%;
+        } */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            background: lightskyblue;
+            width: 100%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            font: normal 4em 'Montserrat Black', serif;
+            text-align:center;
+        }
+        nav {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right:0;
+            height: 2px;
+            transform: scaleX(0);
+            background: #333;
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        nav a:hover::after{
+            transform: scaleX(1)
+        }
+    </style>
+
+    <header>
+        <h1>11B Bears</h1>
+        <div><nav>
+        <a href="#">How We Roll!</a>
+        <a href="#">See Report</a>
+        <a href="#">Download Readme</a>
+        </nav>
+        </div>
+    </header>
+
+        <!--<h1 style="color:black;"><b>Visitkort 11B</b></h1>-->
+    <div class="container">
+        <div class="card-container" id="david">
+            <div >
+        <img class="round" src="https://randomuser.me/api/portraits/men/31.jpg" alt="user" />
+        <h2>David Berg</h2>
+        <h6>Ankara</h6>
+        <p>04.06.1988 <br/> IT og Informasjonssytemer</p>
+            </div>
+    </div>
+
+    <div class="card-container" id="andreas">
+        <img class="round" src="https://randomuser.me/api/portraits/men/33.jpg" alt="user" />
+        <h2>Andreas</h2>
+        <h6>Hjemmeby</h6>
+        <p>Fødseldato <br/> IT og Informasjonssytemer</p>
+    </div>
+        <div class="card-container" id="tore">
+        <img class="round" src="https://randomuser.me/api/portraits/men/42.jpg" alt="user" />
+        <h2>Tore</h2>
+        <h6>Hjemmeby</h6>
+        <p>Fødseldato <br/> IT og Informasjonssytemer</p>
+    </div>
+    </div>
+    <div class="container">
+        <div class="card-container" id="eivind">
+            <img class="round" src="https://randomuser.me/api/portraits/men/43.jpg" alt="user" />
+            <h2>Eivind</h2>
+            <h6>Hjemmeby</h6>
+            <p>Fødseldato<br/> IT og Informasjonssytemer</p>
+        </div>
+
+        <div class="card-container" id="rasmus">
+        <img class="round" src="https://randomuser.me/api/portraits/men/36.jpg" alt="user" />
+            <h2>Rasmus</h2>
+            <h6>Hjemmeby</h6>
+            <p>Fødseldato <br/> IT og Informasjonssytemer</p>
+        </div>
+        <div class="card-container" id="stina">
+            <img class="round" src="https://randomuser.me/api/portraits/women/31.jpg" alt="user" />
+            <h2>Stina</h2>
+            <h6>Hjemmeby</h6>
+            <p>Fødseldato<br/> IT og Informasjonssytemer</p>
+        </div>
+    </div>
+
+</head>
+
+
+</html>
+
+
+
+
+
