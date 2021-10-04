@@ -106,6 +106,21 @@
         color: hotpink;
         text-decoration: none;
       }
+
+      #navn {
+        position: absolute;
+        left: 665px;
+      }
+
+      #enavn {
+        position: absolute;
+        left: 665px;
+      }
+
+      .navn {
+        position: absolute;
+        left: 580px;
+      }
     </style>
     <!-- Add hover effects to a href -->
   </head>
@@ -125,14 +140,16 @@
 
     <form>
       <p>
-        <label for="navn">Fornavn </label>
+        <label class="navn" for="navn">Fornavn </label>
         <input type="text" name="navn" id="navn" />
       </p>
-
+      <br />
       <p>
-        <label for="enavn">Etternavn</label>
+        <label class="navn" for="enavn">Etternavn</label>
         <input type="text" name="enavn" id="enavn" />
       </p>
+      <br />
+      <br />
       <br />
 
       <h2>How We Roll - parametre:</h2>
