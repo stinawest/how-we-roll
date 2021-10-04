@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TITTEL</title>
     <style>
+      
+      .radio {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 30px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .radioknapper {
+        margin-top: 10vh;
+      }
+
+      .box {
+        width: 1450px;
+        height: 800px;
+        margin: 20px;
+        border: 5px transparent
+        position: relative;
+      }
+
+      .slider {
+        position: absolute;
+        left: 660px;
+        margin-top: 30px;
+        
+      }
+
+
+
       <!-- Her kan stil defineres (vi skal bruke Cascading Style Sheets) -->
     </style>
-    <!--
-    [[[[[[[[     [[[[[[[[        [[[[   [[[[   [[[[  [[[[
-    [::::::[    [::[             [::[   [::[   [::[  [::[
-      [::[      [::[             [::[   [::[   [::[  [::[
-      [::[       [::::[   [[[[   [::[   [::[   [[[[[[[[[[
-      [::[          [::[         [::[   [::[         [::[
-    [::::::[        [::[         [::[   [::[         [::[
-    [[[[[[[[   [[[[[[[[          [[[[   [[[[         [[[[
- -->
+   
   </head>
   <body>
     <!-- Her (i body-elementet) skrives alt innhold, som påvirker tegning på skjermen. -->
@@ -25,5 +48,57 @@
       // Se https://html.spec.whatwg.org/multipage/scripting.html#restrictions-for-contents-of-script-elements
       // Her skrives kode i JavaScript som "gir liv" til bilde på skjermen.
     </script>
+
+    <form>
+<h2 class="radioknapper">
+    Radioknapper
+</h2>
+<p>Svar på utsagnene på en skala fra "Enig" til "Uenig".</p>
+<p>1. Du er en morgenfugl</p>
+    <label for="henig" class="radio">
+      <input id="henig" type="radio" name="henig-huenig" class="radio__input"/> Enig
+    </label>
+    <label for="enig" class="radio">
+      <input id="enig" type="radio" name="henig-huenig" /> Litt enig
+    </label>
+    <label for="vikke" class="radio">
+      <input id="vikke" type="radio" name="henig-huenig" /> Vet ikke
+      </label>
+      <label for="uenig" class="radio">
+          <input id="uenig" type="radio" name="henig-huenig" /> Litt uenig
+      </label>
+    <label for="Huenig" class="radio">
+        <input id="Huenig" type="radio" name="henig-huenig" /> Uenig
+    </label>
+    </label>
+    <p>
+
+    </p>
+    <button type="submit">Lagre</button>
+    <form>
+
+      <script>
+        function add(a,b) {
+          return a+b;
+        }
+        console.log(add(3,4));
+        
+        </script>
+
+      <hr>
+
+      <br>
+      
+<div class="box">
+      <div>
+      <input type="range" class="slider" id="dorn" name="dorn" value="50" />
+      </div>
+      <br>
+      <div>
+      <input type="range" class="slider" id="cora" name="cora" value="50" />
+      </div>
+  </div>
+
+
   </body>
 </html>
