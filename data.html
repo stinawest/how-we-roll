@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fetching data</title>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script>
+    </script>
+</head>
+<body>
+    <script>
+
+        let theNavn, theEnavn, theDorn, theCora, theBors, theSorg, theTidring, theZorm, theKlorw, thePort, thePorp, theRore, theNorl = [];
+        fetch('https://bacit.info/hwr/20211006121350-c585b0da1c279b13384d28fc0f108155.json')
+        .then(function (resp){
+            return resp.json();
+        })
+        .then (function (test){
+            console.log(test);
+            var theNavn = test.navn;
+            var theEnavn = test.enavn;
+            var theDorn = test.dorn;
+            var theCora = test.cora;
+            var theBors = test.bors;
+            var theSorg = test.sorg;
+            var theTidring = test.tidring;
+            var theZorm = test.zorm;
+            var theKlorw = test.klorw;
+            var thePort = test.port;
+            var thePorp = test.porp;
+            var theRore = test.rore;
+            var theNorl = test.norl;
+            coraverdi = parseInt(theCora);
+            norlverdi = parseInt(theNorl);
+
+            console.log(parseInt(theCora));
+
+        });
+
+    </script>
+    <script>
+       var x = 5 + norlverdi;
+    </script>
+    <canvas id="myChart" style="width:100%;max-width:1300px"></canvas>
+    <script>
+
+        //bare kopiert en tabel for å teste//
+    var xValues = ["", "jobbe selv/jobbe sammen", "rett på sak/backstory", "videre/snakke", "når som helst/ sett av tid", "meldinger/zoom", "timeplan/ingen timeplan","gjøre/bestemme", ];
+    var yValues = [50, 49, 44, 24, 15];
+    var barColors = ["red", "green","blue","orange","brown"];
+
+    new Chart("myChart", {
+    type: "bar",
+    data: {
+    labels: xValues,
+    datasets: [{
+    backgroundColor: barColors,
+    data: yValues
+    }]
+    },
+        options: {
+            legend: {display: false},
+            title: {
+                display: true,
+                text: "World Wine Production 2018"
+            }
+        }
+    });
+    </script>
+</body>
+</html>
