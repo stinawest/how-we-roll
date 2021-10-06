@@ -8,10 +8,51 @@
       @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
       * {
-        margin: 0;
+        margin-top: 0;
         padding: 0;
       }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .navback {
+        background: lightskyblue;
+        width: 100%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font: normal 4em "Montserrat Black", serif;
+        text-align: center;
+        padding-top: 30px;
+      }
+      nav {
+        height: auto;
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      nav a {
+        flex-grow: 1;
+        text-align: center;
+        padding: 1em;
+        position: relative;
+      }
+      nav a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        transform: scaleX(0);
+        background: #333;
+        transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+      }
 
+      nav a:hover::after {
+        transform: scaleX(1);
+      }
       body {
         background-color: white;
         font-family: Montserrat, sans-serif;
@@ -46,7 +87,7 @@
         height: 350px;
         background-color: #231e39;
         border-radius: 5px;
-        box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
         margin: 10px;
         display: flex;
         flex-direction: column;
@@ -90,50 +131,10 @@
            min-height: 1000vh;
            width: 100%;
        } */
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      header {
-        background: lightskyblue;
-        width: 100%;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        font: normal 4em "Montserrat Black", serif;
-        text-align: center;
-      }
-      nav {
-        max-width: 800px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-      }
 
-      nav a {
-        flex-grow: 1;
-        text-align: center;
-        padding: 1em;
-        position: relative;
-      }
-      nav a::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 2px;
-        transform: scaleX(0);
-        background: #333;
-        transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
-      }
-
-      nav a:hover::after {
-        transform: scaleX(1);
-      }
     </style>
 
-    <header>
+    <div class="navback">
       <h1>11B Bears</h1>
       <div>
         <nav>
@@ -142,7 +143,7 @@
           <a href="/how-we-roll/README.md">Download Readme</a>
         </nav>
       </div>
-    </header>
+    </div class="navback">
 
     <!--<h1 style="color:black;"><b>Visitkort 11B</b></h1>-->
     <div class="container">
