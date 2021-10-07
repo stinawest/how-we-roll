@@ -1,7 +1,7 @@
 <h1> How we roll: Dokumentasjon og analyse av design
 <h2> Sammendrag av gruppearbeid 
 
-Skal inneholde et sammendragav deres arbeid med “How WeRoll”-oppgaven. Dere skal så konsist som mulig beskrive hva dere gjorde for å besvare oppgaven. Foreksempel, hvordan organiserte dere dere ----------------------------
+<p> Skal inneholde et sammendragav deres arbeid med “How WeRoll”-oppgaven. Dere skal så konsist som mulig beskrive hva dere gjorde for å besvare oppgaven. Foreksempel, hvordan organiserte dere dere ----------------------------
 Vi alle leste nøye gjennom oppgaveteksten, deretter startet vi med å lage skisser for userinterface, wireframes og brukerhistorier. Vi opprettet de forskjellige gjøremålene i GITHUB med hjelp av Kanban-bord og fordelte disse. Vi delte oss opp i to mindre grupper hvor de som hadde mest erfaring startet med HWR siden og rapport siden, mens resten lærte seg grunnleggende koding i tilegg til hvordan man skal navigere seg rundt på GITHUB og hvordan man Commit-er og Push-er. Vi ville heller ha jobbet i par hvor en som kan litt mindre jobbet med en som kan litt mer, fordi vi opplevde et problem med at når vi delte oss i to grupper etter kompetanse ble det vanskelig å diskutere i felleskap når ting ble for teknisk.
 
 hvordan dere tok i bruk verktøy og hva som fungerte bra,minde bra og dårlig?----------------------Vi begynte med å bruke Kanban-bord hvor vi delte opp oppgaver, dette fungerte bra for oss da det ga oss en fin oversikt over prosessen i arbeidet. mdn, intelliJ, VS, online picture-converter
@@ -16,7 +16,7 @@ For at alle på gruppa skal forstå blant annet forkortelser i koden la vi inn k
 
 <h2> Skisser
 
-File tree
+<p> File tree
 
 ![File tree](bilder/filetree.jpg)
 
@@ -37,7 +37,6 @@ Oversikt over md-fil og Github-filer
 ![LHWR04](bilder/lhwr04.jpg)
 
 <h2> Kilder
-
 
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range
 - https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
