@@ -1,10 +1,19 @@
-skal inneholde et sammendragav deres arbeid med “How WeRoll”-oppgaven. Dere skal så konsist som mulig beskrive hva dere gjorde for å besvare oppgaven. Foreksempel, hvordan organiserte dere dere ----------------------------Vi alle leste nøye gjennom oppgaveteksten, deretter startet vi med å lage skisser for userinterface, wireframes og brukerhistorier. Vi opprettet de forskjellige gjøremålene i GITHUB med hjelp av Kanban-bord og fordelte disse. Vi delte oss opp i to mindre grupper hvor de som hadde mest erfaring startet med HWR siden og rapport siden, mens resten lærte seg grunnleggende koding i tilegg til hvordan man skal navigere seg rundt på GITHUB og hvordan man Commit-er og Push-er. Vi ville heller ha jobbet i par hvor en som kan litt mindre jobbet med en som kan litt mer, fordi vi opplevde et problem med at når vi delte oss i to grupper etter kompetanse ble det vanskelig å diskutere i felleskap når ting ble for teknisk.
+[h1] How we roll: Dokumentasjon og analyse av design
+[h2] Sammendrag av gruppearbeid
+[p] Skal inneholde et sammendragav deres arbeid med “How WeRoll”-oppgaven. Dere skal så konsist som mulig beskrive hva dere gjorde for å besvare oppgaven. Foreksempel, hvordan organiserte dere dere ----------------------------Vi alle leste nøye gjennom oppgaveteksten, deretter startet vi med å lage skisser for userinterface, wireframes og brukerhistorier. Vi opprettet de forskjellige gjøremålene i GITHUB med hjelp av Kanban-bord og fordelte disse. Vi delte oss opp i to mindre grupper hvor de som hadde mest erfaring startet med HWR siden og rapport siden, mens resten lærte seg grunnleggende koding i tilegg til hvordan man skal navigere seg rundt på GITHUB og hvordan man Commit-er og Push-er. Vi ville heller ha jobbet i par hvor en som kan litt mindre jobbet med en som kan litt mer, fordi vi opplevde et problem med at når vi delte oss i to grupper etter kompetanse ble det vanskelig å diskutere i felleskap når ting ble for teknisk.
 hvordan dere tok i bruk verktøy og hva som fungerte bra,minde bra og dårlig?----------------------Vi begynte med å bruke Kanban-bord hvor vi delte opp oppgaver, dette fungerte bra for oss da det ga oss en fin oversikt over prosessen i arbeidet. mdn, intelliJ, VS, online picture-converter
 Hvilke regler dere satt for bruke av hovedrepository og hvordan fungerte disse?------------------ vi hadde alltid bare en branch, så når folk eksperimenterte i koden pushet de ikke opp før alle var enige og hadde fått sett på koden. De som var usikre i starten lagde egen branch for å teste seg frem lokalt, men gikk over til å bruke main branch når vi følte oss sikre.
 Hvordan sørget dere at alle lærer grunnleggende programmering i HTML og CSS (arbeid i par, arbeidmed alle, individuelt arbeid osv.)?--------------------------- Folk gjorde "hjemmelekser" også diskuterte vi arbeidet når vi var samlet i gruppetimer på skolen.
 
 For at alle på gruppa skal forstå blant annet forkortelser i koden la vi inn kommentarer der dette måtte utdypes. så vi har ikke lagt inn kildelenker på grunn av at disse står lengre ned i markdown filen.
-
+[h2] Skisser
+[p] File tree
 ![File tree](bilder/filetree.jpg)
+[p] Hovedside med visittkort
 ![LHWR01](bilder/lhwr01.jpg)
+[p] How we roll
 ![LHWR02](bilder/lhwr02.jpg)
+[p] Rapport
+![LHWR03](bilder/lhwr03.jpg)
+[p] Oversikt over md-fil og Github-filer
+![LHWR04](bilder/lhwr04.jpg)
