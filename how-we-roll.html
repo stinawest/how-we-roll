@@ -52,11 +52,10 @@
 
       .slider {
         background: white;
-        width: 30vh;
+        width: 100%;
         appearance: none;
         align-items: center;
-        left: 643px;
-        position: absolute;
+
       }
 
       .slider:focus {
@@ -149,17 +148,26 @@
       }
 
       .grid-container {
+        padding-left: 10%;
         display: grid;
-        grid-template-columns: 47% 6% 47%;
+        grid-template-columns: 25% 40% 25%;
         grid-gap: 10px;
+
         
       }
 
       .grid-container > div {
         font-size: 20px;
-      }
+        background-color: rgba(255, 255, 255, 0.8);
+        /*border: 1px solid black;*/
 
-      
+      }
+      .right {
+        text-align: right;
+      }
+      .left{
+        text-align: left;
+      }
     </style>
     <!-- Add hover effects to a href -->
   </head>
@@ -201,38 +209,38 @@
       <br>
       
       <div class="grid-container">
-        <div><p>Morgenfugl</p></div>
+        <div class="right" ><p>Morgenfugl</p></div>
         <div>
           <br />
           <!-- dorn - day or night -->
-          <input type="range" class="slider" id="dorn" name="dorn" value="50" />
+          <input type="range" class="slider" id="dorn" name="dorn" value="50"/>
         </div>
-        <div><p>Nattugle</p></div>
-        <div>Jobbe med det sammen</div>
+        <div class="left"><p>Nattugle</p></div>
+        <div class="right"><p>Jobbe med det sammen</p></div>
         <div>
           <br />
           <!-- cora - cooperate or alone -->
           <input type="range" class="slider" id="cora" name="cora" value="50" />
           <br />
         </div>
-        <div><p>Gå for deg selv og tenke</p></div>
-        <div><p>Gi meg backstory</p></div>
+        <div class="left"><p>Gå for deg selv og tenke</p></div>
+        <div class="right"><p>Gi meg backstory</p></div>
         <div>
           <br />
           <!-- bors - backstory or sak-->
           <input type="range" class="slider" id="bors" name="bors" value="50" />
           <br />
         </div>
-        <div><p>Gå rett på sak</p></div>
-        <div><p>Snakke om det</p></div>
+        <div class="left"><p>Gå rett på sak</p></div>
+        <div class="right"><p>Snakke om det</p></div>
         <div>
           <br />
           <!-- sorg - snakke or gå videre-->
           <input type="range" class="slider" id="sorg" name="sorg" value="50" />
           <br />
         </div>
-        <div>Gå videre</div>
-        <div>Sette av tid</div>
+        <div class="left"><p>Gå videre</p></div>
+        <div class="right"><p>Sette av tid</p></div>
         <div>
           <br />
           <!--"tidring" Tid eller ringe-->
@@ -245,16 +253,16 @@
           />
           <br />
         </div>
-        <div>Ring meg når som helst</div>
-        <div>Ringe på Zoom</div>
+        <div class="left"><p>Ring meg når som helst</p></div>
+        <div class="right"><p>Ringe på Zoom</p></div>
         <div>
           <br />
           <!--"zorm" - zoom or message-->
           <input type="range" class="slider" id="zorm" name="zorm" value="50" />
           <br />
         </div>
-        <div>Sende meldinger</div>
-        <div>Kl 09-17</div>
+        <div class="left"><p>Sende meldinger</p></div>
+        <div class="right"><p>Kl 09-17</p></div>
         <div>
           <br />
           <!--"klorw" - Kl. or whenever-->
@@ -267,39 +275,39 @@
           />
           <br />
         </div>
-        <div>Har ikke fast timeplan</div>
-        <div>Jeg vil være med i prosessen</div>
+        <div class="left"><p>Har ikke fast timeplan</p></div>
+        <div class="right"><p>Jeg vil være med i prosessen</p></div>
         <div>
           <br />
           <!--"port" - prosess or tell me-->
           <input type="range" class="slider" id="port" name="port" value="50" />
           <br />
         </div>
-        <div>Bare si hva jeg skal gjøre</div>
-        <div>Privat annerkjennelse</div>
+        <div class="left"><p>Bare si hva jeg skal gjøre</p></div>
+        <div class="right"><p>Privat annerkjennelse</p></div>
         <div>
           <br />
           <!--"porp" - privat or public-->
           <input type="range" class="slider" id="porp" name="porp" value="50" />
           <br />
         </div>
-        <div>Offentlig annerkjennelse</div>
-        <div>Fast rolle i gruppen</div>
+        <div class="left"><p>Offentlig annerkjennelse</p></div>
+        <div class="right"><p>Fast rolle i gruppen</p></div>
         <div>
           <br />
           <!--"rore"- role or everything-->
           <input type="range" class="slider" id="rore" name="rore" value="50" />
           <br />
         </div>
-        <div>Kan gjøre alt</div>
-        <div>Regelmessig tilbakemelding</div>
+        <div class="left"><p>Kan gjøre alt</div>
+        <div class="right"><p>Regelmessig tilbakemelding</p></div>
         <div>
           <br />
           <!--"norl" - Now or later-->
           <input type="range" class="slider" id="norl" name="norl" value="50" />
           <br />
         </div>
-        <div>Tilbakemelding etter prosjekter</div>
+        <div class="left"><p>Tilbakemelding etter prosjekter</p></div>
       </div>
      
       </div>
