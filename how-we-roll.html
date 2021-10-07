@@ -46,16 +46,6 @@
         text-align: center;
       }
 
-      .venstre {
-        position: absolute;
-        left: 880px;
-      }
-
-      .høyre {
-        position: absolute;
-        right: 880px;
-      }
-
       p {
         margin-top: 20px;
       }
@@ -100,17 +90,21 @@
 
       #navn {
         position: absolute;
-        left: 665px;
+        left: 680px;
+        font-size: 20px;
       }
 
       #enavn {
         position: absolute;
-        left: 665px;
+        left: 680px;
+        font-size: 20px;
       }
 
       .navn {
         position: absolute;
         left: 580px;
+        font-size: 20px;
+      
       }
       a {
         text-decoration: none;
@@ -153,6 +147,19 @@
       nav a:hover::after {
         transform: scaleX(1);
       }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 47% 6% 47%;
+        grid-gap: 10px;
+        
+      }
+
+      .grid-container > div {
+        font-size: 20px;
+      }
+
+      
     </style>
     <!-- Add hover effects to a href -->
   </head>
@@ -171,11 +178,14 @@
       </div>
     </header>
 
-    <h2>How we roll</h2>
-    <h3>Gruppe 11B</h3>
-
     <br />
+    <br>
 
+    <h2>How We Roll - parametre:</h2>
+    <h3>Dra slideren i den retningen som best tilsvarer dine studievaner</h3>
+
+    
+<br>
     <form>
       <p>
         <label class="navn" for="navn">Fornavn </label>
@@ -186,107 +196,115 @@
         <label class="navn" for="enavn">Etternavn</label>
         <input type="text" name="enavn" id="enavn" />
       </p>
-      <br />
-      <br />
-      <br />
-
-      <h2>How We Roll - parametre:</h2>
-
-      <div>
-        <!-- dorn - day or night -->
-        <label class="høyre" for="dorn">Morgenfugl </label>
-        <input type="range" class="slider" id="dorn" name="dorn" value="50" />
-        <label class="venstre" for="dorn">Nattugle</label>
+      <br>
+      <br>
+      <br>
+      
+      <div class="grid-container">
+        <div><p>Morgenfugl</p></div>
+        <div>
+          <br />
+          <!-- dorn - day or night -->
+          <input type="range" class="slider" id="dorn" name="dorn" value="50" />
+        </div>
+        <div><p>Nattugle</p></div>
+        <div>Jobbe med det sammen</div>
+        <div>
+          <br />
+          <!-- cora - cooperate or alone -->
+          <input type="range" class="slider" id="cora" name="cora" value="50" />
+          <br />
+        </div>
+        <div><p>Gå for deg selv og tenke</p></div>
+        <div><p>Gi meg backstory</p></div>
+        <div>
+          <br />
+          <!-- bors - backstory or sak-->
+          <input type="range" class="slider" id="bors" name="bors" value="50" />
+          <br />
+        </div>
+        <div><p>Gå rett på sak</p></div>
+        <div><p>Snakke om det</p></div>
+        <div>
+          <br />
+          <!-- sorg - snakke or gå videre-->
+          <input type="range" class="slider" id="sorg" name="sorg" value="50" />
+          <br />
+        </div>
+        <div>Gå videre</div>
+        <div>Sette av tid</div>
+        <div>
+          <br />
+          <!--"tidring" Tid eller ringe-->
+          <input
+            type="range"
+            class="slider"
+            id="tidring"
+            name="tidring"
+            value="50"
+          />
+          <br />
+        </div>
+        <div>Ring meg når som helst</div>
+        <div>Ringe på Zoom</div>
+        <div>
+          <br />
+          <!--"zorm" - zoom or message-->
+          <input type="range" class="slider" id="zorm" name="zorm" value="50" />
+          <br />
+        </div>
+        <div>Sende meldinger</div>
+        <div>Kl 09-17</div>
+        <div>
+          <br />
+          <!--"klorw" - Kl. or whenever-->
+          <input
+            type="range"
+            class="slider"
+            id="klorw"
+            name="klorw"
+            value="50"
+          />
+          <br />
+        </div>
+        <div>Har ikke fast timeplan</div>
+        <div>Jeg vil være med i prosessen</div>
+        <div>
+          <br />
+          <!--"port" - prosess or tell me-->
+          <input type="range" class="slider" id="port" name="port" value="50" />
+          <br />
+        </div>
+        <div>Bare si hva jeg skal gjøre</div>
+        <div>Privat annerkjennelse</div>
+        <div>
+          <br />
+          <!--"porp" - privat or public-->
+          <input type="range" class="slider" id="porp" name="porp" value="50" />
+          <br />
+        </div>
+        <div>Offentlig annerkjennelse</div>
+        <div>Fast rolle i gruppen</div>
+        <div>
+          <br />
+          <!--"rore"- role or everything-->
+          <input type="range" class="slider" id="rore" name="rore" value="50" />
+          <br />
+        </div>
+        <div>Kan gjøre alt</div>
+        <div>Regelmessig tilbakemelding</div>
+        <div>
+          <br />
+          <!--"norl" - Now or later-->
+          <input type="range" class="slider" id="norl" name="norl" value="50" />
+          <br />
+        </div>
+        <div>Tilbakemelding etter prosjekter</div>
       </div>
-      <br />
-      <br />
-      <div>
-        <!-- cora - cooperate or alone -->
-        <label class="venstre" for="cora">Jobbe med det sammen</label>
-        <input type="range" class="slider" id="cora" name="cora" value="50" />
-        <label class="høyre" for="cora">Gå for seg selv og tenke</label>
+     
       </div>
-      <br />
-      <br />
-      <div>
-        <label class="venstre" for="bors"> Gi meg backstory</label>
-        <input type="range" class="slider" id="bors" name="bors" value="50" />
-        <label class="høyre" for="bors"> Gå rett på sak</label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <label class="venstre" for="sorg"> Snakke om det </label>
-        <input type="range" class="slider" id="sorg" name="sorg" value="50" />
-        <label class="høyre" for="sorg"> Gå videre </label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <!--"tidring" Tid eller ringe-->
-        <label class="venstre" for="tidring"> Sette av tid </label>
-        <input
-          type="range"
-          class="slider"
-          id="tidring"
-          name="tidring"
-          value="50"
-        />
-        <label class="høyre" for="tidring"> Ring meg når som helst </label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <!--"zorm" - zoom or message-->
-        <label class="venstre" for="zorm"> Ringe på zoom </label>
-        <input type="range" class="slider" id="zorm" name="zorm" value="50" />
-        <label class="høyre" for="zorm"> Sende meldinger </label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <!--"klorw" - Kl. or whenever-->
-        <label class="venstre" for="klorw"> Kl. 09-17 </label>
-        <input type="range" class="slider" id="klorw" name="klorw" value="50" />
-        <label class="høyre" for="klorw"> Har ikke en fast timeplan </label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <!--"port" - prosess or tell me-->
-        <label class="venstre" for="port"> Jeg vil være med i prosessen </label>
-        <input type="range" class="slider" id="port" name="port" value="50" />
-        <label class="høyre" for="port"> Bare si hva jeg skal gjøre </label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <!--"porp" - privat or public-->
-        <label class="venstre" for="porp"> Privat annerkjennelse </label>
-        <input type="range" class="slider" id="porp" name="porp" value="50" />
-        <label class="høyre" for="porp"> Offentlig annerkjennelse </label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <!--"rore"- role or everything-->
-        <label class="venstre" for="rore"> Fast rolle i gruppen </label>
-        <input type="range" class="slider" id="rore" name="rore" value="50" />
-        <label class="høyre" for="rore"> Kan gjøre alt </label>
-      </div>
-      <br />
-      <br />
-      <div>
-        <!--"norl" - Now or later-->
-        <label class="venstre" for="norl"> Regelmessig tilbakemelding </label>
-        <input type="range" class="slider" id="norl" name="norl" value="50" />
-        <label class="høyre" for="norl">
-          Tilbakemelding etter prosjekter
-        </label>
-      </div>
-
-      <br />
-      <br />
+<br>
+<br>
 
       <button type="submit">Lagre</button>
     </form>
