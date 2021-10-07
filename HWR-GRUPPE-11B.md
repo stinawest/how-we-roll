@@ -1,5 +1,5 @@
-<h1> How we roll: Dokumentasjon og analyse av design <h1>
-<h2> Sammendrag av gruppearbeid <h2>
+<h1> How we roll: Dokumentasjon og analyse av design
+<h2> Sammendrag av gruppearbeid 
 
 Skal inneholde et sammendragav deres arbeid med “How WeRoll”-oppgaven. Dere skal så konsist som mulig beskrive hva dere gjorde for å besvare oppgaven. Foreksempel, hvordan organiserte dere dere ----------------------------
 Vi alle leste nøye gjennom oppgaveteksten, deretter startet vi med å lage skisser for userinterface, wireframes og brukerhistorier. Vi opprettet de forskjellige gjøremålene i GITHUB med hjelp av Kanban-bord og fordelte disse. Vi delte oss opp i to mindre grupper hvor de som hadde mest erfaring startet med HWR siden og rapport siden, mens resten lærte seg grunnleggende koding i tilegg til hvordan man skal navigere seg rundt på GITHUB og hvordan man Commit-er og Push-er. Vi ville heller ha jobbet i par hvor en som kan litt mindre jobbet med en som kan litt mer, fordi vi opplevde et problem med at når vi delte oss i to grupper etter kompetanse ble det vanskelig å diskutere i felleskap når ting ble for teknisk.
@@ -14,19 +14,29 @@ For at alle på gruppa skal forstå blant annet forkortelser i koden la vi inn k
 
 
 
-<h2> Skisser <h2>
+<h2> Skisser
+
 File tree
+
 ![File tree](bilder/filetree.jpg)
+
 Hovedside med visittkort
+
 ![LHWR01](bilder/lhwr01.jpg)
+
 How we roll
+
 ![LHWR02](bilder/lhwr02.jpg)
+
 Rapport
+
 ![LHWR03](bilder/lhwr03.jpg)
+
 Oversikt over md-fil og Github-filer
+
 ![LHWR04](bilder/lhwr04.jpg)
 
-<h2> Kilder <h2>
+<h2> Kilder
 
 
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range
