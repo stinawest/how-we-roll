@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fetching data</title>
+</head>
+<body>
+
+<div id="debug"></div>
+    <canvas id="report" width="1400" height="1000"></canvas>
+
+<script>
+    var canvas = document.getElementById('report');
+    var context = canvas.getContext('2d');
+
+    fetch('https://bacit.info/hwr/20211008102044-7b8597b0c075adcc9817f41208300923.json')
+        .then(function (resp){
+            return resp.json();
+        })
+        .then (function (test){
+            console.log(test);
+
+
+            context.font = '14px serif';
+            context.fillText(test.navn, 80, 20);
+            context.fillText(test.enavn, 120, 20);
+            context.fillText('dorn', 30, 50);
+            context.fillText('cora', 30, 100);
+            context.fillText('bors', 30, 150);
+            context.fillText('sorg', 30, 200);
+            context.fillText('tidring', 30, 250);
+            context.fillText('zorm', 30, 300);
+            context.fillText('klorw', 30, 350);
+            context.fillText('port', 30, 400);
+            context.fillText('porp', 30, 450);
+            context.fillText('rore', 30, 500);
+            context.fillText('norl', 30, 550);
+
+            context.beginPath();
+            context.moveTo(70,50);
+            context.lineTo(170,50);
+
+            context.moveTo(70,100);
+            context.lineTo(170,100);
+
+            context.moveTo(70,150);
+            context.lineTo(170,150);
+
+            context.moveTo(70,200);
+            context.lineTo(170,200);
+
+            context.moveTo(70,250);
+            context.lineTo(170,250);
+
+            context.moveTo(70,300);
+            context.lineTo(170,300);
+
+            context.moveTo(70,350);
+            context.lineTo(170,350);
+
+            context.moveTo(70,400);
+            context.lineTo(170,400);
+
+            context.moveTo(70,450);
+            context.lineTo(170,450);
+
+            context.moveTo(70,500);
+            context.lineTo(170,500);
+
+            context.moveTo(70,550);
+            context.lineTo(170,550);
+
+            context.stroke();
+
+            var X = 70 + parseInt(test.dorn, 10);
+            var Y = 50;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 70 + parseInt(test.cora, 10);
+            var Y = 100;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.bors, 10);
+            var Y = 150;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.sorg, 10);
+            var Y = 200;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.tidring, 10);
+            var Y = 250;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.zorm, 10);
+            var Y = 300;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.klorw, 10);
+            var Y = 350;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.port, 10);
+            var Y = 400;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.porp, 10);
+            var Y = 450;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.rore, 10);
+            var Y = 500;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(test.norl, 10);
+            var Y = 550;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+        });
+    fetch('https://bacit.info/hwr/20211008102107-432e4a5e94a105744a87dbc6ff291550.json')
+        .then(function (resp){
+            return resp.json();
+        })
+        .then (function (test){
+            console.log(test);
+
+
+            context.font = '14px serif';
+            context.fillText(test.navn, 280, 20);
+            context.fillText(test.enavn, 310, 20);
+            context.fillText('dorn', 230, 50);
+            context.fillText('cora', 230, 100);
+            context.fillText('bors', 230, 150);
+            context.fillText('sorg', 230, 200);
+            context.fillText('tidring', 230, 250);
+            context.fillText('zorm', 230, 300);
+            context.fillText('klorw', 230, 350);
+            context.fillText('port', 230, 400);
+            context.fillText('porp', 230, 450);
+            context.fillText('rore', 230, 500);
+            context.fillText('norl', 230, 550);
+
+            context.beginPath();
+            context.moveTo(270,50);
+            context.lineTo(370,50);
+
+            context.moveTo(270,100);
+            context.lineTo(370,100);
+
+            context.moveTo(270,150);
+            context.lineTo(370,150);
+
+            context.moveTo(270,200);
+            context.lineTo(370,200);
+
+            context.moveTo(270,250);
+            context.lineTo(370,250);
+
+            context.moveTo(270,300);
+            context.lineTo(370,300);
+
+            context.moveTo(270,350);
+            context.lineTo(370,350);
+
+            context.moveTo(270,400);
+            context.lineTo(370,400);
+
+            context.moveTo(270,450);
+            context.lineTo(370,450);
+
+            context.moveTo(270,500);
+            context.lineTo(370,500);
+
+            context.moveTo(270,550);
+            context.lineTo(370,550);
+
+            context.stroke();
+
+            var X = 270 + parseInt(test.dorn, 10);
+            var Y = 50;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 270 + parseInt(test.cora, 10);
+            var Y = 100;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.bors, 10);
+            var Y = 150;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.sorg, 10);
+            var Y = 200;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.tidring, 10);
+            var Y = 250;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.zorm, 10);
+            var Y = 300;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.klorw, 10);
+            var Y = 350;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.port, 10);
+            var Y = 400;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.porp, 10);
+            var Y = 450;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.rore, 10);
+            var Y = 500;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 270 + parseInt(test.norl, 10);
+            var Y = 550;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+        });
+    fetch('https://bacit.info/hwr/20211008102411-781efaf1b47799131c9a663b151f344d.json')
+        .then(function (resp){
+            return resp.json();
+        })
+        .then (function (test){
+            console.log(test);
+
+
+            context.font = '14px serif';
+            context.fillText(test.navn, 480, 20);
+            context.fillText(test.enavn, 515, 20);
+            context.fillText('dorn', 430, 50);
+            context.fillText('cora', 430, 100);
+            context.fillText('bors', 430, 150);
+            context.fillText('sorg', 430, 200);
+            context.fillText('tidring', 430, 250);
+            context.fillText('zorm', 430, 300);
+            context.fillText('klorw', 430, 350);
+            context.fillText('port', 430, 400);
+            context.fillText('porp', 430, 450);
+            context.fillText('rore', 430, 500);
+            context.fillText('norl', 430, 550);
+
+            context.beginPath();
+            context.moveTo(470,50);
+            context.lineTo(570,50);
+
+            context.moveTo(470,100);
+            context.lineTo(570,100);
+
+            context.moveTo(470,150);
+            context.lineTo(570,150);
+
+            context.moveTo(470,200);
+            context.lineTo(570,200);
+
+            context.moveTo(470,250);
+            context.lineTo(570,250);
+
+            context.moveTo(470,300);
+            context.lineTo(570,300);
+
+            context.moveTo(470,350);
+            context.lineTo(570,350);
+
+            context.moveTo(470,400);
+            context.lineTo(570,400);
+
+            context.moveTo(470,450);
+            context.lineTo(570,450);
+
+            context.moveTo(470,500);
+            context.lineTo(570,500);
+
+            context.moveTo(470,550);
+            context.lineTo(570,550);
+
+            context.stroke();
+
+            var X = 470 + parseInt(test.dorn, 10);
+            var Y = 50;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 470 + parseInt(test.cora, 10);
+            var Y = 100;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.bors, 10);
+            var Y = 150;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.sorg, 10);
+            var Y = 200;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.tidring, 10);
+            var Y = 250;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.zorm, 10);
+            var Y = 300;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.klorw, 10);
+            var Y = 350;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.port, 10);
+            var Y = 400;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.porp, 10);
+            var Y = 450;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.rore, 10);
+            var Y = 500;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 470 + parseInt(test.norl, 10);
+            var Y = 550;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+        });
+    fetch('https://bacit.info/hwr/20211008102748-f72d524765d924876be8946d958d7b77.json')
+        .then(function (resp){
+            return resp.json();
+        })
+        .then (function (test){
+            console.log(test);
+
+
+            context.font = '14px serif';
+            context.fillText(test.navn, 680, 20);
+            context.fillText(test.enavn, 730, 20);
+            context.fillText('dorn', 630, 50);
+            context.fillText('cora', 630, 100);
+            context.fillText('bors', 630, 150);
+            context.fillText('sorg', 630, 200);
+            context.fillText('tidring', 630, 250);
+            context.fillText('zorm', 630, 300);
+            context.fillText('klorw', 630, 350);
+            context.fillText('port', 630, 400);
+            context.fillText('porp', 630, 450);
+            context.fillText('rore', 630, 500);
+            context.fillText('norl', 630, 550);
+
+            context.beginPath();
+            context.moveTo(670,50);
+            context.lineTo(770,50);
+
+            context.moveTo(670,100);
+            context.lineTo(770,100);
+
+            context.moveTo(670,150);
+            context.lineTo(770,150);
+
+            context.moveTo(670,200);
+            context.lineTo(770,200);
+
+            context.moveTo(670,250);
+            context.lineTo(770,250);
+
+            context.moveTo(670,300);
+            context.lineTo(770,300);
+
+            context.moveTo(670,350);
+            context.lineTo(770,350);
+
+            context.moveTo(670,400);
+            context.lineTo(770,400);
+
+            context.moveTo(670,450);
+            context.lineTo(770,450);
+
+            context.moveTo(670,500);
+            context.lineTo(770,500);
+
+            context.moveTo(670,550);
+            context.lineTo(770,550);
+
+            context.stroke();
+
+            var X = 670 + parseInt(test.dorn, 10);
+            var Y = 50;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 670 + parseInt(test.cora, 10);
+            var Y = 100;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.bors, 10);
+            var Y = 150;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.sorg, 10);
+            var Y = 200;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.tidring, 10);
+            var Y = 250;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.zorm, 10);
+            var Y = 300;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.klorw, 10);
+            var Y = 350;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.port, 10);
+            var Y = 400;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.porp, 10);
+            var Y = 450;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.rore, 10);
+            var Y = 500;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 670 + parseInt(test.norl, 10);
+            var Y = 550;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+        });
+    fetch('https://bacit.info/hwr/20211007134101-6051deaf0f8640e3cf34d9372e10fdfe.json')
+        .then(function (resp){
+            return resp.json();
+        })
+        .then (function (test){
+            console.log(test);
+
+
+            context.font = '14px serif';
+            context.fillText(test.navn, 880, 20);
+            context.fillText(test.enavn, 920, 20);
+            context.fillText('dorn', 830, 50);
+            context.fillText('cora', 830, 100);
+            context.fillText('bors', 830, 150);
+            context.fillText('sorg', 830, 200);
+            context.fillText('tidring', 830, 250);
+            context.fillText('zorm', 830, 300);
+            context.fillText('klorw', 830, 350);
+            context.fillText('port', 830, 400);
+            context.fillText('porp', 830, 450);
+            context.fillText('rore', 830, 500);
+            context.fillText('norl', 830, 550);
+
+            context.beginPath();
+            context.moveTo(870,50);
+            context.lineTo(970,50);
+
+            context.moveTo(870,100);
+            context.lineTo(970,100);
+
+            context.moveTo(870,150);
+            context.lineTo(970,150);
+
+            context.moveTo(870,200);
+            context.lineTo(970,200);
+
+            context.moveTo(870,250);
+            context.lineTo(970,250);
+
+            context.moveTo(870,300);
+            context.lineTo(970,300);
+
+            context.moveTo(870,350);
+            context.lineTo(970,350);
+
+            context.moveTo(870,400);
+            context.lineTo(970,400);
+
+            context.moveTo(870,450);
+            context.lineTo(970,450);
+
+            context.moveTo(870,500);
+            context.lineTo(970,500);
+
+            context.moveTo(870,550);
+            context.lineTo(970,550);
+
+            context.stroke();
+
+            var X = 870 + parseInt(test.dorn, 10);
+            var Y = 50;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 870 + parseInt(test.cora, 10);
+            var Y = 100;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.bors, 10);
+            var Y = 150;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.sorg, 10);
+            var Y = 200;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.tidring, 10);
+            var Y = 250;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.zorm, 10);
+            var Y = 300;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.klorw, 10);
+            var Y = 350;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.port, 10);
+            var Y = 400;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.porp, 10);
+            var Y = 450;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.rore, 10);
+            var Y = 500;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 870 + parseInt(test.norl, 10);
+            var Y = 550;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+        });
+    fetch('https://bacit.info/hwr/20211007134101-6051deaf0f8640e3cf34d9372e10fdfe.json')
+        .then(function (resp){
+            return resp.json();
+        })
+        .then (function (test){
+            console.log(test);
+
+
+            context.font = '14px serif';
+            context.fillText(test.navn, 1080, 20);
+            context.fillText(test.enavn, 1120, 20);
+            context.fillText('dorn', 1030, 50);
+            context.fillText('cora', 1030, 100);
+            context.fillText('bors', 1030, 150);
+            context.fillText('sorg', 1030, 200);
+            context.fillText('tidring', 1030, 250);
+            context.fillText('zorm', 1030, 300);
+            context.fillText('klorw', 1030, 350);
+            context.fillText('port', 1030, 400);
+            context.fillText('porp', 1030, 450);
+            context.fillText('rore', 1030, 500);
+            context.fillText('norl', 1030, 550);
+
+            context.beginPath();
+            context.moveTo(1070,50);
+            context.lineTo(1170,50);
+
+            context.moveTo(1070,100);
+            context.lineTo(1170,100);
+
+            context.moveTo(1070,150);
+            context.lineTo(1170,150);
+
+            context.moveTo(1070,200);
+            context.lineTo(1170,200);
+
+            context.moveTo(1070,250);
+            context.lineTo(1170,250);
+
+            context.moveTo(1070,300);
+            context.lineTo(1170,300);
+
+            context.moveTo(1070,350);
+            context.lineTo(1170,350);
+
+            context.moveTo(1070,400);
+            context.lineTo(1170,400);
+
+            context.moveTo(1070,450);
+            context.lineTo(1170,450);
+
+            context.moveTo(1070,500);
+            context.lineTo(1170,500);
+
+            context.moveTo(1070,550);
+            context.lineTo(1170,550);
+
+            context.stroke();
+
+            var X = 1070 + parseInt(test.dorn, 10);
+            var Y = 50;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 1070 + parseInt(test.cora, 10);
+            var Y = 100;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.bors, 10);
+            var Y = 150;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.sorg, 10);
+            var Y = 200;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.tidring, 10);
+            var Y = 250;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.zorm, 10);
+            var Y = 300;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.klorw, 10);
+            var Y = 350;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.port, 10);
+            var Y = 400;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.porp, 10);
+            var Y = 450;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.rore, 10);
+            var Y = 500;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 1070 + parseInt(test.norl, 10);
+            var Y = 550;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+        });
+</script>
+
+</body>
+</html>
