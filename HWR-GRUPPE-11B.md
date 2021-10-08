@@ -16,7 +16,7 @@ For at alle på gruppa skal forstå blant annet forkortelser i koden la vi inn k
 
 
 
-<h2> Skisser
+  <h2> Skisser </h2>
 
 <p> File tree
 
