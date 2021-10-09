@@ -3,12 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>fetching data</title>
+    <style>
+        * {
+            margin-top: 0;
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-family: Montserrat;
+        }
+        .navback {
+            background: lightskyblue;
+            width: 100%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font: normal 4em "Montserrat Black", serif;
+            text-align: center;
+            padding-top: 20px;
+        }
+        nav {
+            height: auto;
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            transform: scaleX(0);
+            background: #333;
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        nav a:hover::after {
+            transform: scaleX(1);
+        }
+        .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-container > div {
+
+            width: 700px;
+            margin: 10px;
+            text-align: center;
+
+        }
+        canvas {
+            border-style: solid;
+            padding:30px 30px;
+
+        }
+    </style>
 </head>
 <body>
-
+<div class="navback">
+    <h1>11B Bears</h1>
+    <div>
+        <nav>
+            <a href="/how-we-roll/index.html">Home</a>
+            <a href="/how-we-roll/how-we-roll.html">How We Roll!</a>
+            <a href="/how-we-roll/raportfile1.html">Raport V2</a>
+            <a href="/how-we-roll/README.md">Download Readme</a>
+        </nav>
+    </div>
+</div class="navback">
 <div id="debug"></div>
-<canvas id="report" width="1400" height="1000"></canvas>
-<canvas id="report2" width="1400" height="1000"></canvas>
+<div class="flex-container">
+    <div></div>
+<div>
+    <canvas id="report" class="canvas" width="700" height="600" ></canvas>
+</div>
+    <div></div>
+</div>
 <script>
     var canvas = document.getElementById('report');
     var context = canvas.getContext('2d');
